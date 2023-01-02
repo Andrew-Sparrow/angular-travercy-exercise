@@ -19,4 +19,5 @@ import { TasksComponent } from './components/tasks/tasks.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+  
 export class AppModule { }
