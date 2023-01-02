@@ -1,4 +1,3 @@
-import { isNgTemplate } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 import { Task } from 'src/app/Task';
@@ -21,7 +20,7 @@ export class TasksComponent implements OnInit {
   }
 
   deleteTask(task: Task) {
-    this.taskService.deleteTask(task).subscribe(
+    this.taskService.deleteTaskService(task).subscribe(
       () => this.tasks = this.tasks.filter((item) => item.id !== task.id)
     );
   }
